@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Slideshow Basic with Javascript - No Controls</title>
+  
+
+<!-- If you don't use Charles and are using xip to connect the remote you need to use the local ip in the weinre target.js -->
+<script src="http://dev.studio.yo.10.0.1.33.xip.io:8080/target/target-script-min.js"></script> 
+
+<!-- With Charles then you can leave off the xip.io for weinre ( ?? or connect the remote device through the host conf file?? ) -->
+<!-- <script src="http://dev.studio.yo:8080/target/target-script-min.js"></script> -->
+
+  <script src="js/libs/TweenMax.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  
+  <style>
+    #slideshow {
+      position: relative;
+    }
+    #slideshow div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      outline: 1px dotted #834d9a;
+      background-color: #efefef;
+    }
+  </style>
+
+  
+</head>
+<body>
+<div id="toggleSlideshow" onclick="SLIDESHOW.basicSlideshowApp.pauseSlideshow()">Play/Pause</div>
+
+  <div id="slideshow">
+    <div>
+      <img src="images/CityClub_380.jpg" />
+      <p class="caption">City Club</p>
+    </div>
+    <div>
+      <img src="images/hop-n-gator_051310.jpg" />
+      <p class="caption">Hop N Gator</p>
+    </div>  
+    <div>
+      <img src="images/rock&roll_380.jpg" />
+      <p class="caption">Rock n Roll</p>  
+    </div>  
+    <div>
+      <img src="images/whitebear_380.jpg" />
+      <p class="caption">White Bear</p>  
+    </div>  
+  </div><!-- /end #slideSlideshow -->
+
+
+</body>
+</html>
